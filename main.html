@@ -20,6 +20,15 @@
 		</form>
 
 		<script type="text/javascript" src="./script.js">
+			function removeSelectedColor() {
+				const colorSelect = document.getElementById("colorSelect");
+				const selectedIndex = colorSelect.selectedIndex;
+				if (selectedIndex !== -1) {
+					colorSelect.remove(selectedIndex);
+				} else {
+					alert("No color selected!");
+				}
+			}
 		</script>
 
 	</body>
